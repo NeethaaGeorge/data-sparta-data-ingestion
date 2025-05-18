@@ -9,7 +9,7 @@ def load_config():
     config_path = os.path.join(os.path.dirname(__file__), 'config.ini')
     config = configparser.ConfigParser()
     files = config.read(config_path)
-    print(f"files: {files} Loaded sections: {config.sections()}")  # Debug line
+    # print(f"files: {files} Loaded sections: {config.sections()}")  # Debug line
     return config['weatherapi']
 
 def get_api_key():
