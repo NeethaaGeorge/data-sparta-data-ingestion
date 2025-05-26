@@ -1,0 +1,5 @@
+date,location,region,country,avg_temp_c,max_temp_c,min_temp_c,avg_humidity,condition_text,precip_mm,max_wind_kph
+2025-01-01,Sydney,New South Wales,Australia,23.6,27.2,20.1,72,Overcast,0.7,27.8
+2025-01-01,Brisbane,Queensland,Australia,24.0,27.4,21.1,72,Moderate or heavy rain shower,3.6,18.4
+2025-01-01,Melbourne,Victoria,Australia,17.7,22.4,14.0,58,Partly cloudy,0.1,21.2
+2025-01-01,Perth,Western Australia,Australia,27.7,34.1,23.5,47,Cloudy,0.0,23.8

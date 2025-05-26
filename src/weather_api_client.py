@@ -19,7 +19,6 @@ def get_api_key():
     return api_key
 
 def fetch_weather_data(location: str = "sydney", aqi: str = "no", retries: int = 3, delay: int = 2):
-    print("hello")
     config = load_config()
     base_url = config['base_url']
     endpoint = config['endpoint']
@@ -42,7 +41,7 @@ def fetch_weather_data(location: str = "sydney", aqi: str = "no", retries: int =
         except requests.exceptions.RequestException as e:
             print(f"Attempt {attempt} failed: {e}")
             if attempt < retries:
-                print(f"🔁 Retrying in {delay} seconds...")
+                print(f"Retrying in {delay} seconds...")
                 time.sleep(delay)
             else:
                 print("All retry attempts failed.")
@@ -103,7 +102,7 @@ def convert_to_csv(data_dict: dict, output_path: str):
     """Convert the dict to DataFrame and save as CSV file."""
     df = pd.DataFrame([data_dict])
     df.to_csv(output_path, index=False)
-    print(f"✅ CSV saved to: {output_path}")
+    print(f"CSV saved to: {output_path}")
 
 if __name__ == "__main__":
     raw_data = fetch_weather_data()

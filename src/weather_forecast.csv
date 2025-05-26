@@ -1,0 +1,4 @@
+date,location,region,country,max_temp_c,min_temp_c,avg_temp_c,avg_humidity,condition,precip_mm,max_wind_kph
+2025-05-25,Sydney,New South Wales,Australia,18.8,12.9,15.5,57,Partly Cloudy ,0.0,16.9
+2025-05-26,Sydney,New South Wales,Australia,20.1,12.0,16.0,61,Patchy rain nearby,0.8,31.3
+2025-05-27,Sydney,New South Wales,Australia,16.7,12.1,15.3,68,Patchy rain nearby,2.08,35.6
