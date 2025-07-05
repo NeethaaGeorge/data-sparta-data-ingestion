@@ -1,1 +1,5 @@
+dlt
 dlt[athena]>=1.11.0
+dlt[s3]
+dlt[duckdb]
+pandas

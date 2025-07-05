@@ -12,7 +12,7 @@ def read_api():
     #     "height": [7, 10, 13],
     #     "weight": [69, 130, 100]
     # })
-    csv_path = os.path.join(os.path.dirname(__file__), 'weather_hourly_AUS_last_6_days.csv')
+    csv_path = os.path.join(os.path.dirname(__file__), 'src','weather_hourly_AUS_last_6_days.csv')
     df = pd.read_csv(csv_path)
     yield df
 
@@ -21,7 +21,7 @@ def load_github() -> None:
     pipeline = dlt.pipeline(
         pipeline_name="neetha_pipeline",
         destination='athena',
-        dataset_name="neetha",
+        dataset_name="neetha_weather_update",
     )
 
     load_info = pipeline.run(read_api())
